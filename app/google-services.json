@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "1089684184229",
+    "project_id": "almacen-2e8e8",
+    "storage_bucket": "almacen-2e8e8.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1089684184229:android:ad57be974204168711014c",
+        "android_client_info": {
+          "package_name": "co.com.example.reservas"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBzDiEgiM0NyUkpp0i6RYoXQ8Z4OxLU2nQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
