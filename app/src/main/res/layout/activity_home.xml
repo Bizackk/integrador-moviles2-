@@ -1,0 +1,107 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000000"
+    tools:context=".HomeActivity">
+
+    <TextView
+        android:id="@+id/tvLibraryInfo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Bienvenido al apartado de reservas. Seleccione una hora y fecha para su reserva, dentro de las opciones disponibles."
+        android:textColor="#FFFFFF"
+        android:textSize="18sp"
+        android:layout_margin="16dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:id="@+id/tvReservationTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Elije una opción de reserva:"
+        android:textColor="#FFFFFF"
+        android:textSize="16sp"
+        android:layout_below="@id/tvLibraryInfo"
+        android:layout_marginTop="20dp"
+        android:layout_centerHorizontal="true" />
+
+    <LinearLayout
+        android:id="@+id/llReservationOptions"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_below="@id/tvReservationTitle"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp">
+
+        <Button
+            android:id="@+id/btnOption1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="10:00 AM, 01/01/2023"
+            android:textColor="#FFFFFF"
+            android:background="#6200EE"
+            android:layout_marginBottom="10dp"/>
+
+        <Button
+            android:id="@+id/btnOption2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="11:00 AM, 01/01/2023"
+            android:textColor="#FFFFFF"
+            android:background="#6200EE"
+            android:layout_marginBottom="10dp"/>
+
+        <Button
+            android:id="@+id/btnOption3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="12:00 PM, 01/01/2023"
+            android:textColor="#FFFFFF"
+            android:background="#6200EE"
+            android:layout_marginBottom="10dp"/>
+
+        <Button
+            android:id="@+id/btnOption4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="01:00 PM, 01/01/2023"
+            android:textColor="#FFFFFF"
+            android:background="#6200EE"
+            android:layout_marginBottom="10dp"/>
+
+        <Button
+            android:id="@+id/btnOption5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="02:00 PM, 01/01/2023"
+            android:textColor="#FFFFFF"
+            android:background="#6200EE"
+            android:layout_marginBottom="10dp"/>
+
+        <Button
+            android:id="@+id/btnOption6"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="03:00 PM, 01/01/2023"
+            android:textColor="#FFFFFF"
+            android:background="#6200EE"
+            android:layout_marginBottom="10dp"/>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btnBack"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Volver"
+        android:layout_below="@id/llReservationOptions"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:textColor="#FFFFFF"
+        android:background="#6200EE"
+        android:padding="10dp"/>
+</RelativeLayout>
+

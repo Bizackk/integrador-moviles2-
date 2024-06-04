@@ -1,4 +1,3 @@
-<?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
@@ -10,17 +9,17 @@
         android:id="@+id/titleTextView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Reservas"
+        android:text="Biblioteca"
         android:textColor="#FFFFFF"
         android:textSize="24sp"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="50dp" />
 
     <Button
-        android:id="@+id/btnBookings"
+        android:id="@+id/btnInformation"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Bookings"
+        android:text="Información"
         android:layout_below="@id/titleTextView"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="30dp"
@@ -32,8 +31,20 @@
         android:id="@+id/btnLoginRegister"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Login/Register"
-        android:layout_below="@id/btnBookings"
+        android:text="Reservaciones"
+        android:layout_below="@id/btnInformation"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:textColor="#FFFFFF"
+        android:background="#6200EE"
+        android:padding="10dp"/>
+
+    <Button
+        android:id="@+id/btnBooks"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Libros"
+        android:layout_below="@id/btnLoginRegister"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="20dp"
         android:textColor="#FFFFFF"
@@ -45,11 +56,13 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Coming Soon"
-        android:layout_below="@id/btnLoginRegister"
+        android:layout_below="@id/btnBooks"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="20dp"
         android:textColor="#FFFFFF"
         android:background="#6200EE"
         android:padding="10dp"/>
 
+
 </RelativeLayout>
+

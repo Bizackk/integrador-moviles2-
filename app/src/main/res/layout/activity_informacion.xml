@@ -1,0 +1,62 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000000"
+    tools:context=".InformacionActivity">
+
+    <TextView
+        android:id="@+id/titleTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Información de la Biblioteca"
+        android:textColor="#FFFFFF"
+        android:textSize="24sp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp" />
+
+    <TextView
+        android:id="@+id/infoTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Bienvenido a nuestra biblioteca. Aquí encontrará una amplia colección de libros y recursos para satisfacer sus necesidades de conocimiento. Nuestro objetivo es proporcionar un ambiente tranquilo y cómodo para el estudio y la lectura."
+        android:textColor="#FFFFFF"
+        android:textSize="18sp"
+        android:layout_below="@id/titleTextView"
+        android:layout_marginTop="30dp"
+        android:layout_marginHorizontal="20dp" />
+
+    <TextView
+        android:id="@+id/policiesTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Leyes y Políticas: \n1. Mantenga silencio en todo momento. \n2. No se permite comer ni beber. \n3. Devuelva los libros a tiempo para evitar multas."
+        android:textColor="#FFFFFF"
+        android:textSize="16sp"
+        android:layout_below="@id/infoTextView"
+        android:layout_marginTop="20dp"
+        android:layout_marginHorizontal="20dp" />
+
+    <TextView
+        android:id="@+id/servicesTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Servicios: \n- Préstamo de libros \n- Acceso a internet \n- Sala de estudio \n- Actividades y eventos"
+        android:textColor="#FFFFFF"
+        android:textSize="16sp"
+        android:layout_below="@id/policiesTextView"
+        android:layout_marginTop="20dp"
+        android:layout_marginHorizontal="20dp" />
+
+    <Button
+        android:id="@+id/btnBack"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/infoTextView"
+        android:layout_marginTop="411dp"
+        android:background="#6200EE"
+        android:padding="10dp"
+        android:text="Volver"
+        android:textColor="#FFFFFF" />
+</RelativeLayout>
+

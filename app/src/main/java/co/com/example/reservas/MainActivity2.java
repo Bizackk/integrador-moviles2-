@@ -1,6 +1,6 @@
 package co.com.example.reservas;
 
-import android.annotation.SuppressLint;
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -22,13 +22,11 @@ public class MainActivity2 extends AppCompatActivity {
     private Button btnRegister, btnLogin;
     private DatabaseReference mDatabase;
 
-    @SuppressLint("MissingInflatedId")
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main2);
 
-        // Initialize Firebase Database
         mDatabase = FirebaseDatabase.getInstance().getReference();
 
         etUsername = findViewById(R.id.etUsername);
@@ -67,6 +65,7 @@ public class MainActivity2 extends AppCompatActivity {
                     public void onComplete(@NonNull Task<Void> task) {
                         if (task.isSuccessful()) {
                             Toast.makeText(MainActivity2.this, "Registro exitoso", Toast.LENGTH_SHORT).show();
+                            navigateToHome();
                         } else {
                             Toast.makeText(MainActivity2.this, "Registro fallido: " + task.getException().getMessage(), Toast.LENGTH_SHORT).show();
                         }
@@ -89,7 +88,8 @@ public class MainActivity2 extends AppCompatActivity {
                 if (snapshot.exists()) {
                     User user = snapshot.getValue(User.class);
                     if (user != null && user.password.equals(password)) {
-                        Toast.makeText(MainActivity2.this, "Inicio de sesión exitoso", Toast.LENGTH_SHORT).show(); //si quieres mostrar otra vista here
+                        Toast.makeText(MainActivity2.this, "Inicio de sesión exitoso", Toast.LENGTH_SHORT).show();
+                        navigateToHome();
                     } else {
                         Toast.makeText(MainActivity2.this, "Contraseña incorrecta", Toast.LENGTH_SHORT).show();
                     }
@@ -105,12 +105,19 @@ public class MainActivity2 extends AppCompatActivity {
         });
     }
 
+    private void navigateToHome() {
+        Intent intent = new Intent(MainActivity2.this, HomeActivity.class);
+        intent.putExtra("username", etUsername.getText().toString().trim());
+        startActivity(intent);
+        finish();
+    }
+
     public static class User {
         public String username;
         public String password;
 
         public User() {
-            // Default constructor required for calls to DataSnapshot.getValue(User.class)
+
         }
 
         public User(String username, String password) {

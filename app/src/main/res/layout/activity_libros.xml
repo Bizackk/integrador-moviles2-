@@ -1,0 +1,77 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000000"
+    tools:context=".LibrosActivity">
+
+    <TextView
+        android:id="@+id/titleTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Libros Disponibles"
+        android:textColor="#FFFFFF"
+        android:textSize="24sp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp" />
+
+    <LinearLayout
+        android:id="@+id/booksLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_below="@id/titleTextView"
+        android:layout_marginTop="20dp"
+        android:layout_marginHorizontal="20dp">
+
+        <TextView
+            android:id="@+id/book1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="El Quijote - Miguel de Cervantes\nAño: 1605\nDescripción: Una de las obras más destacadas de la literatura española, que narra las aventuras de Don Quijote y su fiel escudero Sancho Panza."
+            android:textColor="#FFFFFF"
+            android:textSize="16sp"
+            android:layout_marginBottom="20dp" />
+
+        <TextView
+            android:id="@+id/book2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Cien Años de Soledad - Gabriel García Márquez\nAño: 1967\nDescripción: Una obra maestra del realismo mágico que relata la historia de la familia Buendía en el pueblo ficticio de Macondo."
+            android:textColor="#FFFFFF"
+            android:textSize="16sp"
+            android:layout_marginBottom="20dp" />
+
+        <TextView
+            android:id="@+id/book3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="1984 - George Orwell\nAño: 1949\nDescripción: Una novela distópica que explora los peligros del totalitarismo y la vigilancia extrema."
+            android:textColor="#FFFFFF"
+            android:textSize="16sp"
+            android:layout_marginBottom="20dp" />
+
+        <TextView
+            android:id="@+id/book4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Orgullo y prejuicio - Jane Austen\nAño: 1813\nDescripción: Una comedia romántica que sigue las complicadas relaciones entre personajes de diferentes clases sociales en la Inglaterra del siglo XIX."
+            android:textColor="#FFFFFF"
+            android:textSize="16sp"
+            android:layout_marginBottom="20dp" />
+
+        <Button
+            android:id="@+id/btnBack"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Volver"
+            android:layout_below="@id/booksLayout"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="30dp"
+            android:textColor="#FFFFFF"
+            android:background="#6200EE"
+            android:padding="10dp"/>
+
+
+    </LinearLayout>
+</RelativeLayout>
